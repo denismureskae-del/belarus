@@ -106,21 +106,31 @@ const Index = () => {
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🦬</span>
+                  <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary fill-current">
+                    <path d="M20 2 L38 20 L20 38 L2 20 Z M20 10 L30 20 L20 30 L10 20 Z" />
+                  </svg>
                 </div>
                 <h3 className="font-display text-xl font-semibold mb-2">Национальный символ</h3>
                 <p className="text-sm opacity-80">Зубр — живое воплощение силы и свободы белорусской земли</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">◇</span>
+                  <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary fill-current">
+                    <path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" />
+                  </svg>
                 </div>
                 <h3 className="font-display text-xl font-semibold mb-2">Язык традиции</h3>
                 <p className="text-sm opacity-80">Геометрические орнаменты передают смыслы сквозь поколения</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">✦</span>
+                  <svg viewBox="0 0 40 40" className="w-8 h-8 text-primary fill-current">
+                    <rect x="8" y="8" width="10" height="10" />
+                    <rect x="22" y="8" width="10" height="10" />
+                    <rect x="8" y="22" width="10" height="10" />
+                    <rect x="22" y="22" width="10" height="10" />
+                    <rect x="15" y="15" width="10" height="10" />
+                  </svg>
                 </div>
                 <h3 className="font-display text-xl font-semibold mb-2">Современный дизайн</h3>
                 <p className="text-sm opacity-80">Сочетание древних мотивов и актуальной эстетики</p>
