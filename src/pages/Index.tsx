@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Check, MapPin, Gift, Shield, Truck, Phone, ExternalLink } from "lucide-react";
-import plateHero from "@/assets/plate-hero.jpg";
-import plateProduct from "@/assets/plate-product.jpg";
+import plateMain from "@/assets/plate-main.png";
+import plateWall from "@/assets/plate-wall.jpg";
+import plateTable from "@/assets/plate-table.jpg";
+import plateHands from "@/assets/plate-hands.jpg";
 
 const Index = () => {
   const price = "120"; // редактируемая цена
@@ -10,31 +12,34 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center">
-        <div className="absolute inset-0">
-          <img 
-            src={plateHero} 
-            alt="Декоративная тарелка с зубром" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-muted to-background" />
         
         <div className="container relative z-10 py-20 lg:py-32">
-          <div className="max-w-2xl">
-            <p className="text-primary font-medium tracking-widest uppercase mb-4 text-sm">
-              Ручная работа · Ограниченный тираж
-            </p>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              Декоративная тарелка с образом зубра — 
-              <span className="text-primary"> символ силы</span> и наследия
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Авторский дизайн в стиле белорусского народного орнамента.
-              <br />Натуральное дерево. Ручная роспись.
-            </p>
-            <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90">
-              Заказать сейчас
-            </Button>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-primary font-medium tracking-widest uppercase mb-4 text-sm">
+                Ручная работа · Ограниченный тираж
+              </p>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+                Декоративная тарелка с образом зубра — 
+                <span className="text-primary"> символ силы</span> и наследия
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+                Авторский дизайн в стиле белорусского народного орнамента.
+                <br />Натуральное дерево. Ручная роспись.
+              </p>
+              <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90">
+                Заказать сейчас
+              </Button>
+            </div>
+            
+            <div className="flex justify-center">
+              <img 
+                src={plateMain} 
+                alt="Декоративная тарелка с зубром" 
+                className="w-full max-w-lg drop-shadow-2xl"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -77,9 +82,9 @@ const Index = () => {
             
             <div className="order-1 lg:order-2">
               <img 
-                src={plateProduct} 
-                alt="Декоративная тарелка" 
-                className="w-full max-w-md mx-auto rounded-lg shadow-2xl"
+                src={plateTable} 
+                alt="Тарелка на столе" 
+                className="w-full rounded-2xl shadow-2xl"
               />
             </div>
           </div>
@@ -123,8 +128,26 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Why Valuable */}
+      {/* Gallery / Interior */}
       <section className="py-20 lg:py-32">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-8">
+            <img 
+              src={plateWall} 
+              alt="Тарелка в интерьере на стене" 
+              className="w-full h-[400px] object-cover rounded-2xl shadow-xl"
+            />
+            <img 
+              src={plateHands} 
+              alt="Тарелка в руках" 
+              className="w-full h-[400px] object-cover rounded-2xl shadow-xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Why Valuable */}
+      <section className="py-20 lg:py-32 bg-muted">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <p className="text-primary font-medium tracking-widest uppercase mb-4 text-sm text-center">
@@ -156,7 +179,7 @@ const Index = () => {
       </section>
 
       {/* Where It Fits */}
-      <section className="py-20 lg:py-32 bg-muted">
+      <section className="py-20 lg:py-32">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-primary font-medium tracking-widest uppercase mb-4 text-sm">
@@ -235,9 +258,9 @@ const Index = () => {
               
               <div className="flex justify-center">
                 <img 
-                  src={plateProduct} 
+                  src={plateMain} 
                   alt="Декоративная тарелка" 
-                  className="w-full max-w-sm rounded-lg shadow-2xl"
+                  className="w-full max-w-sm drop-shadow-2xl"
                 />
               </div>
             </div>
