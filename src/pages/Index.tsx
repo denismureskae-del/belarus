@@ -28,8 +28,10 @@ const Index = () => {
                 Авторский дизайн в стиле белорусского народного орнамента.
                 <br />Натуральное дерево. Ручная роспись.
               </p>
-              <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90">
-                Заказать сейчас
+              <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90" asChild>
+                <a href="https://wa.me/79680601602" target="_blank" rel="noopener noreferrer">
+                  Заказать
+                </a>
               </Button>
             </div>
             
@@ -236,8 +238,10 @@ const Index = () => {
                   {price} BYN
                 </p>
                 
-                <Button size="lg" className="w-full md:w-auto text-lg px-12 py-6 bg-primary hover:bg-primary/90 mb-8">
-                  Купить тарелку
+                <Button size="lg" className="w-full md:w-auto text-lg px-12 py-6 bg-primary hover:bg-primary/90 mb-8" asChild>
+                  <a href="https://wa.me/79680601602" target="_blank" rel="noopener noreferrer">
+                    Заказать
+                  </a>
                 </Button>
 
                 <div className="flex flex-wrap gap-6">
