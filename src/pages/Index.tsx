@@ -39,7 +39,8 @@ const Index = () => {
               <img 
                 src={plateMain} 
                 alt="Декоративная тарелка с зубром" 
-                className="w-full max-w-lg drop-shadow-2xl"
+                className="w-full max-w-lg"
+                style={{ filter: "drop-shadow(0 25px 35px rgba(0, 0, 0, 0.35))" }}
               />
             </div>
           </div>
@@ -274,7 +275,8 @@ const Index = () => {
                 <img 
                   src={plateMain} 
                   alt="Декоративная тарелка" 
-                  className="w-full max-w-sm drop-shadow-2xl"
+                  className="w-full max-w-sm"
+                  style={{ filter: "drop-shadow(0 25px 35px rgba(0, 0, 0, 0.35))" }}
                 />
               </div>
             </div>
